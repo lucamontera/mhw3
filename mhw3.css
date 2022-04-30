@@ -1,0 +1,498 @@
+body
+{
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    background-color: #f3a712;
+    align-items: center;
+}
+
+
+@media (max-width:500px)
+{
+    body
+    {
+        font-size: .7em;
+    }
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url(file:sfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: auto;
+    height: 100vh;
+    align-items: center;
+
+    
+}
+
+
+header::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+/* -------------------- STYLE NAV -------------------- */
+
+
+nav
+{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+#link-nav a
+{
+   align-self: flex-end;
+   margin: 20px;
+   color: white;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+#link-nav a:hover 
+{
+    color: #ef6461;
+}
+
+
+#link-nav button
+{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    margin-right: 5px;
+    color: white;
+}
+
+#link-nav button:hover
+{
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #f3a712;
+}
+
+#menu
+{
+    display: none;
+}
+
+#menu div 
+{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 500px)
+{
+    #link-nav a, #link-nav button
+    {
+        display: none;
+    }
+
+    #logo
+    {
+        font-size: .5em ;
+        margin-left: 3px;
+    }
+
+    #menu 
+    {
+        display: block;
+        margin-right: 5px;
+    }
+}
+
+
+#logo-decoration1
+{
+    color: #335c67;
+}
+
+#logo-decoration2
+{
+    color: #ef6461;
+    
+}
+
+#logo-decoration3
+{
+    color: #f3a712;
+}
+
+#logo
+{
+    font-size: 2em;  /* 40 pixel*/
+    text-transform: uppercase;
+}
+
+
+
+/* -------------------- STYLE BOX SCELTA API -------------------- */
+
+
+#check-api
+{
+    margin-top: 80px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#check-api h1
+{
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+#check-api h3
+{
+    text-transform: uppercase;
+    font-size: 1em;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#check-api h3:hover
+{
+  color: #f3a712;
+  cursor: pointer;
+}
+
+
+
+header h1, header h3, header p, header form 
+{
+    z-index: 5;
+}
+
+header div h1
+{
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    margin: 0px;
+    max-width: 60%;
+}
+
+header div p
+{
+    color: white;
+    font-size: 1em;
+    text-transform: lowercase;
+    width: 65%; 
+}
+
+form
+{
+    align-items: center;
+}
+
+#submit
+{
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: #ffffff;
+    width: 50%;   
+    margin-top: 15px;
+}
+
+#tema, #nome_artista
+{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    height: 20px;
+}
+
+.api1, .api2
+{
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    width:40VW;
+    
+}
+
+.api1 h1, .api2 h1
+{
+    font-size: 1.2em;
+}
+
+@media (max-width:500px)
+{
+    .api1,  .api2
+    {
+        width: 70vw;
+    }
+
+    .api1 p, .api2 p
+    {
+        width: 100%;
+    }
+
+}
+
+.api1 p, .api2 p
+{
+    font-weight: lighter;
+    
+}
+
+
+
+
+/*-------------------- STYLE API1 --------------------*/
+
+/*#api1, #api2
+{
+    margin-left: 5%;
+    border: 1 px solid white;
+    background-color: #335c67;
+    z-index: 3;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+
+}*/
+
+
+/*-------------------- sezione risultati --------------------*/
+
+#sezione2 , #risultato 
+{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#risultato
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenitore-risultati
+{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.contenitore-immagine
+{
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+
+    
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.immagine
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.hidden1
+{
+    display: none;
+}
+
+
+
+
+/*-------------------- sezione anteprima --------------------*/
+
+/*
+#risultato
+{
+    HA LE STESSE PROPRIETA' DI SEZIONE2
+}
+*/
+
+
+.cornice-anteprima
+{
+    border: 9px ridge #335c67;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    align-self: center;
+    width: auto;
+    height: 300px;
+    margin-bottom: 20px;
+    
+
+
+}
+
+.immagine-anteprima
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.testo
+{
+    font-size: 2em;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.button
+{
+    font-size: 1em;
+
+    align-self: center;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+
+    margin-bottom: 20px;
+}
+
+.button:hover
+{
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+
+
+
+/*-------------------- STYLE WKIPEDIA API AND UNIVERSITY OF CHICAGO --------------------*/
+
+.contenitoreApi2
+{
+    width: 80vw;
+    margin: 0 auto;
+    text-align: start;
+   
+}
+
+.contenitoreRisultatoApi3
+{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contenitore_opera_totale
+{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+}
+
+.titolo_opera
+{
+    align-self: flex-start;
+    text-align: start;
+
+    margin: auto;
+    
+    max-width: 280px;
+    color: white;
+    font-size: 15px;
+
+}
+
+
+/*-------------------- STYLE FOOTER --------------------*/
+
+
+footer
+{
+    display: flex;
+    background-color: #335c67;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    padding: 75px;
+}
+
+footer h1 
+{
+    font-size: 1em;
+    
+}
+
+@media (max-width:500px) 
+{
+    footer p 
+    {
+        font-size: .9em;
+    }
+}
